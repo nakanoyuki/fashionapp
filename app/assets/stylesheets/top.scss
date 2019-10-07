@@ -1,0 +1,32 @@
+// Place all the styles related to the Top controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@mixin white-screen{
+  background: rgba(255,255,255,0.9);
+}
+
+body {
+  font-family: "Avenir Next";
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  @include white-screen;
+  color: #111;;
+  height: 90px;
+}
+
+.header-logo {
+ float: left;
+}
+
+.header-left li{
+  float: left;
+}
+
+.header-right li{
+  float: right;
+}
