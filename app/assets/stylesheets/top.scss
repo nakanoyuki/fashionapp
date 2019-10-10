@@ -13,20 +13,58 @@ li {
   list-style: none;
 }
 
-.header {
+header {
   @include white-screen;
-  color: #111;;
-  height: 90px;
+  color: #111;
+  position: fixed;
+  width: 99%;
+  height: 50px;
 }
 
-.header-logo {
+.header__logo {
  float: left;
 }
 
-.header-left li{
+.header__left li{
   float: left;
 }
 
-.header-right li{
+.header__right li{
   float: right;
 }
+
+.top-wrapper__image {
+width: 100%;
+height: 800px;
+padding-bottom: 50px;
+}
+  
+
+.content-wrapper{
+  display: flex;
+  &__image{
+    width: 35%;
+    padding: 0 100px;
+  }
+  &__body{
+    margin: 0 auto;
+    letter-spacing: .08em;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.amount{
+  margin-top: 30px;
+  &__prefix{
+    font-size: 20px;
+  }
+  &__value{
+    font-weight: bold; 
+    font-size: 40px;
+  }
+  &__suffix{
+    color: #888;
+  }
+}
+
