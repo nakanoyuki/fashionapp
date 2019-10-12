@@ -1,0 +1,45 @@
+.section-howto {
+  text-align: center;
+  padding:100px;
+  &__title{
+    padding: 30px;
+  }
+}
+
+.stepBar {
+  display: flex;
+  max-width: 600px;
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+}
+.stepBar li {
+  font-size: 18px;
+  list-style: none;
+  position: relative;
+  width: 33.333%;
+}
+.stepBar li:after {
+  background: #D0E1F9;
+  content: "";
+  width: calc(100% - 24px);
+  height: 4px;
+  position: absolute;
+  left: calc(-50% + 12px);
+  top: 10px;
+}
+.stepBar li:first-child:after {
+  display: none;
+}
+.stepBar li span {
+  background: #D0E1F9;
+  color: #333;
+  display: inline-block;
+  height: 30px;
+  margin-bottom: 5px;
+  line-height: 30px;
+  width: 30px;
+  -moz-border-radius: 70%;
+  -webkit-border-radius: 70%;
+  border-radius: 70%;
+}
