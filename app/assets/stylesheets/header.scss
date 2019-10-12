@@ -1,0 +1,30 @@
+@mixin white-screen{
+    background: rgba(255,255,255,0.9);
+  }
+  header {
+    @include white-screen;
+    color: #111;
+    position: fixed;
+    width: 99%;
+    height: 60px;
+  }
+  
+  .header__logo {
+   float: left;
+  }
+  
+  .header__left li{
+    float: left;
+  }
+  
+  .header__right li{
+    float: right;
+  }
+  
+  .top-wrapper__image {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  padding-bottom: 50px;
+  
+  }
