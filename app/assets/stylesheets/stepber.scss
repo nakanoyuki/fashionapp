@@ -20,7 +20,7 @@
   width: 33.333%;
 }
 .stepBar li:after {
-  background: #D0E1F9;
+  background: #f2f2f2;
   content: "";
   width: calc(100% - 24px);
   height: 4px;
@@ -32,14 +32,14 @@
   display: none;
 }
 .stepBar li span {
-  background: #D0E1F9;
+  background: #f2f2f2;
   color: #333;
   display: inline-block;
-  height: 30px;
+  height: 40px;
   margin-bottom: 5px;
-  line-height: 30px;
-  width: 30px;
+  line-height: 40px;
+  width: 40px;
   -moz-border-radius: 70%;
   -webkit-border-radius: 70%;
-  border-radius: 70%;
+  border-radius: 50%;
 }
