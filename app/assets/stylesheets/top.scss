@@ -47,3 +47,31 @@ li {
   text-align: center;
   PADDING: 100px;
 }
+
+
+.footer-category{
+  text-align: center;
+  color: #333;
+  padding: 100px;
+
+  &__title{
+  font-size: 30px;
+  }
+  &__content {
+    padding: 40px;
+    ul li{ 	
+        display: inline;
+        padding: 20px;
+      a {
+        text-decoration: none;
+        &:hover {
+          color: #888;
+        }
+      }
+    }
+  }
+}
+
+.footer-site{
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
