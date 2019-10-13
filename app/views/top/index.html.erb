@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+  <%= render "top/header"%>
+
+  <div class="top-wrapper">
+
+    <div class="top-wrapper__image">
+      <%= image_tag("#{asset_path "top/header.jpg"}",class:"top-wrapper__image__left") %>
+      <%# <%= image_tag("#{asset_path "top/header.jpg"}",class:"top-wrapper__image__center") %>
+      <%# <%= image_tag("#{asset_path "top/header.jpg"}",class:"top-wrapper__image__right") %> %>
+    </div> %>
+
+    <%# <div class="page-top__title">
+      <span>MECHAKARI</span>
+    </div>
+    
+    <div class="page-top__outline">
+        <p>
+          <span>
+              月額６０００円から洋服借り放題
+              ファッションを自由に
+          </span>
+        </p>
+    </div> %>
+  </div>
+
+<div class="content-wrapper">
+  
+  <%= image_tag("#{asset_path "top/fashion.jpg"}",class:"content-wrapper__image") %>
+
+  <div class="content-wrapper__body">
+    <div class="content-wrapper__title">
+      <h2>月額定額制で洋服が借り放題</h2>
+    </div>
+
+    <div class="content-wrapper__outline">
+    <p>
+      返却期限がなく何度でも借りかえられる。<br>
+      気に入った洋服は割引価格で買い取り可能。<br>
+      利用済みの洋服はクリーニング不要でそのまま返却。
+    </p>
+    </div>
+
+    <div class="amount">
+      <p>
+        <span class="amount__prefix">月額</span>
+        <span class="amount__value">￥5,800</span>
+        <span class="amount__suffix">（税別）</span>
+      </p>
+      <div class="section-about">
+        <%= image_tag("#{asset_path "top/top-fashion.jpg"}",class:"section-about__image") %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-item">
+  <div class="section-item__body">
+
+    <div class="section-item__title">
+      <h2>借りられるアイテムは全て新品</h2>
+    </div>
+
+    <div class="section-item__outline">
+      <p>
+        借りられるアイテムは全て新品<br>
+        earth music&ecologyをはじめとした人気ブランドが勢揃い。<br>
+        定番から最新トレンドアイテムまで豊富な種類の中から、<br>
+        あなたのお気に入りの一着がきっと見つかる。
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="section-howto">
+
+  <div class="section-howto__title">
+    <h2>MECHAKARIの使い方</h2>
+  </div>
+
+  <ol class="stepBar">
+    <li><span>1</span><br>さがす<br>
+    豊富なコーディネートから
+    洋服を選ぶ</li>
+
+    <li><span>2</span><br>かりる<br>
+    注文から3日前後で<br>
+    手元に届く
+    </li>
+
+    <li><span>3</span><br>
+    かえす<br>
+    クリーニング不要<br>
+    そのまま返却
+    </li>
+  </ol>
+
+</div>
+
+<div class="footer-category">
+
+  <footer class="footer-category__header">
+    <div class="footer-category__title">CATEGORIES</h2>
+  </footer>
+
+  <div class="footer-category__content">
+
+    <ul>
+      <li>
+        <a href="#">トップス</a>
+      </li>
+
+      <li>
+        <a href="#">アウター</a>
+      </li>
+
+      <li>
+        <a href="#">ワンピース</a>
+      </li>
+
+      <li>
+        <a href="#">ボトムス</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<%= render "top/footer"%>

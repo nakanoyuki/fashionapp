@@ -1,8 +1,10 @@
 // Place all the styles related to the Top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@mixin white-screen{
-  background: rgba(255,255,255,0.9);
+
+
+* {
+  color: #000;
 }
 
 body {
@@ -13,20 +15,63 @@ li {
   list-style: none;
 }
 
-.header {
-  @include white-screen;
-  color: #111;;
-  height: 90px;
+.content-wrapper{
+  display: flex;
+  &__image{
+    width: 35%;
+    padding: 0 100px;
+  }
+  &__body{
+    margin: 0 0 0 100px;
+    letter-spacing: .08em;
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
-.header-logo {
- float: left;
+.amount{
+  margin-top: 30px;
+  &__prefix{
+    font-size: 20px;
+  }
+  &__value{
+    font-weight: bold; 
+    font-size: 40px;
+  }
+  &__suffix{
+    color: #888;
+  }
 }
 
-.header-left li{
-  float: left;
+.section-item {
+  text-align: center;
+  PADDING: 100px;
 }
 
-.header-right li{
-  float: right;
+
+.footer-category{
+  text-align: center;
+  color: #333;
+  padding: 100px;
+
+  &__title{
+  font-size: 30px;
+  }
+  &__content {
+    padding: 40px;
+    ul li{ 	
+        display: inline;
+        padding: 20px;
+      a {
+        text-decoration: none;
+        &:hover {
+          color: #888;
+        }
+      }
+    }
+  }
+}
+
+.footer-site{
+  border-top: 1px solid rgba(0,0,0,0.1);
 }
