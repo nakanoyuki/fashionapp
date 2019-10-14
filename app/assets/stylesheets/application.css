@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+ 
+@import "reset";
 @import "top";
 @import "stepber";
 @import "header";
