@@ -1,9 +1,17 @@
+
 <header class="header">
-    <div class="header__logo">MECHAKARI</div>
+    <div class="header__logo">
+      <%= link_to "MECHAKARI",root_path,class: "header__logo"%>
+    </div>
 
     <nav class="header__left">
       <ul>
-        <li>COLLECTION</li>
+
+        <li>
+        <%= link_to "ITEM",item_index_path,class: "header__left"%>
+        </li>
+
+        
         <li>CODINATE</li>
         <li>MYPAGE</li>
       </ul>
