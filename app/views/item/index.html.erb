@@ -1,21 +1,118 @@
 <%= render "top/header"%>
 
-<div class="section-collection">
+<div class="style-item">
 
-<%= image_tag("#{asset_path "item/tops1"}",class:"section-collection__img") %>
+  <div class="style-item__title">
+    <p>ITEM</p>
+  </div>
 
-<%= image_tag("#{asset_path "item/tops1"}",class:"section-collection__img") %>
+  <div class="style-item__outline">
+    <p> 着てみたいアイテム・コーディネートは「いいね！」ができます！</p>
+  </div>
 
+  <div class="style-item__category">
+    <ul>
+      <li>
+        <a href="#">トップス</a>
+      </li>
 
+      <li>
+        <a href="#">アウター</a>
+      </li>
+
+      <li>
+        <a href="#">ワンピース</a>
+      </li>
+
+      <li>
+        <a href="#">ボトムス</a>
+      </li>
+    </ul>
+  </div>
+
+  
 
 </div>
 
 
 
 
+<div class="products-box">
+
+  <div class="four-box">
+
+    <a class="product-box" href="#">
+      <div class="product-box__top">
+        <%= image_tag("#{asset_path "item/tops1"}",class:"product-box__img") %>
+      </div>
+    
+
+      <div class="product-box__bottom">
+        <div class="product-box__bottom__title">フリルブラウス</div>
+
+        <div class="product-box__bottom__info">
+          <div class="product-box__bottom__info__like">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a class="product-box" href="#">
+      <div class="product-box__top">
+        <%= image_tag("#{asset_path "item/tops1"}",class:"product-box__img") %>
+      </div>
+    
+
+      <div class="product-box__bottom">
+        <div class="product-box__bottom__title">フリルブラウス</div>
+
+        <div class="product-box__bottom__info">
+          <div class="product-box__bottom__info__like">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a class="product-box" href="#">
+      <div class="product-box__top">
+        <%= image_tag("#{asset_path "item/tops1"}",class:"product-box__img") %>
+      </div>
+    
+    
+      <div class="product-box__bottom">
+        <div class="product-box__bottom__title">フリルブラウス</div>
+
+        <div class="product-box__bottom__info">
+          <div class="product-box__bottom__info__like">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    </a>
 
 
+    <a class="product-box" href="#">
+      <div class="product-box__top">
+        <%= image_tag("#{asset_path "item/tops1"}",class:"product-box__img") %>
+      </div>
+    
 
+      <div class="product-box__bottom">
+        <div class="product-box__bottom__title">フリルブラウス</div>
+
+        <div class="product-box__bottom__info">
+          <div class="product-box__bottom__info__like">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+</div>
 
 
 <%= render "top/footer"%>
