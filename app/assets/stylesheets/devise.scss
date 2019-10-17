@@ -1,0 +1,42 @@
+@mixin field {
+  width: 200px;
+  height: 20px;
+}
+
+.user-sign__wrapper {
+  padding: 100px;
+}
+
+.field input {
+  @include field;
+}
+
+.devise {
+  width:200px;
+  margin: 0 auto;
+  background-color: #fff;
+  &__title {
+   padding-bottom: 10px;
+   font-size: 24px;
+  }
+  
+  &__button {
+    padding: 20px 0 20px;
+  }
+  &__button input{
+    width: 200px;
+    line-height: 20px;
+    background-color:#fff;
+    border: 1px solid #3c556b;
+    color: #3c556b;
+    text-decoration: none;
+    cursor: pointer;
+    font-size:13px;
+   
+
+    &:active{
+      background-color: gray; 
+    }
+  }
+}
+
