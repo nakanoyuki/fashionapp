@@ -17,11 +17,21 @@
       </ul>
     </nav>
 
+  <% if user_signed_in? %>
+    <nav class="header__right">
+      <ul>
+        <li>ログアウト</li>
+        <li>月額会員登録する</li> 
+      </ul>
+    </nav>
+
+  <% else %>
     <nav class="header__right">
       <ul>
         <li>新規登録</li>
         <li>ログイン</li>
       </ul>
     </nav>
+  <% end %>
     </div>
   </header>
