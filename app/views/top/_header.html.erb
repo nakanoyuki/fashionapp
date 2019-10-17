@@ -20,16 +20,26 @@
   <% if user_signed_in? %>
     <nav class="header__right">
       <ul>
-        <li>ログアウト</li>
+        <li>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+        </li>
+
         <li>月額会員登録する</li> 
+        
       </ul>
     </nav>
 
   <% else %>
     <nav class="header__right">
       <ul>
-        <li>新規登録</li>
-        <li>ログイン</li>
+        <li>
+          <%= link_to "新規登録", new_user_registration_path, class: 'post' %> 
+        </li>
+
+        <li>
+          <%= link_to "ログイン", new_user_session_path, class: 'post' %>
+        </li>
+
       </ul>
     </nav>
   <% end %>
