@@ -1,16 +1,37 @@
-<form method="POST" action="/pay" id="charge-form">
+<%# <form method="POST" action="/pay" id="charge-form">
   <span class="charge-errors"></span>
 
   <h4>支払い</h4>
   <label>カード番号</label>
-  <input type="text" class="number" name="number" maxlength="16" placeholder="カード番号">
+  <input type="text" class="number" name="number" maxlength="16" placeholder="カード番号"><br>
 
   <label>CVC</label>
-  <input type="text" class="cvc" name="cvc" maxlength="3" placeholder="CVC">
+  <input type="text" class="cvc" name="cvc" maxlength="3" placeholder="CVC"><br>
 
   <label>有効期限</label>
   <input type="text" class="exp_month" name="exp_month" maxlength="2" placeholder="月">
-  <input type="text" class="exp_year" name="exp_year" maxlength="4" placeholder="年">
-
-  <button type="submit">送信</button>
+  <input type="text" class="exp_year" name="exp_year" maxlength="4" placeholder="年"><br>
+  
+  <button type="submit">登録</button>
 </form>
+ %>
+
+<h1>PAY.JPを利用したクレジットカード決済の実装</h1>
+
+<% if flash[:notice] %>
+<%= flash[:notice] %>
+<% end %>
+
+
+<%= form_tag("/pay",method:"post",datakey:"pk_test_04b9bbd3d81e8ccf4a2cc756") do %>
+
+
+  <input type="text" name="number" maxlength="16" placeholder="カード番号"><br>
+
+  <input type="text"  name="cvc" maxlength="3" placeholder="CVC"><br>
+
+  <input type="text" name="exp_month" maxlength="2" placeholder="月">
+  <input type="text" name="exp_year" maxlength="4" placeholder="西暦（４桁）"><br>
+
+  <input type="submit">
+<% end %>

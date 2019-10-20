@@ -3,5 +3,16 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'top#index'
   resources :item, only: [:index, :show]
-  resources :cards ,only: [:new]
+
+
+  # get 'cards/new'
+  post '/pay' => "cards#pay"
+    
+  resources  :cards do
+    collection do
+      post 'pay/:id' => 'cards#pay', as: 'pay'
+    end
+  end
+  
+
 end
