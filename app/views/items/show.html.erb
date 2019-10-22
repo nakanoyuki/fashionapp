@@ -1,4 +1,4 @@
-<%= render "top/header"%>
+<%= render "tops/header"%>
 
   <div class="section-item">
     <div class="section-item__image-frame">
@@ -8,12 +8,13 @@
     <div class="section-item__content">
 
       <div class="section-item__content__title">
-        <span>フリルブラウス</span>
+        <span><%=@item.title%></span>
       </div>
 
       <div class="section-item__content__price">
-        <span class="section-item__value">￥5,800</span>
-        <span class="section-item__suffix">（税別）</span>
+        <span class="section-item__value">定価</span>
+        <span class="section-item__value">￥8,500</span>
+        <span class="section-item__suffix">(税込¥9,350)</span>
       </div>
 
       <div class="section-item__content__information">
@@ -38,11 +39,6 @@
             </tr>
 
             <tr>
-              <th>定価</th>
-              <td>￥8,500<br>(税込¥9,350)</td>
-            </tr>
-
-            <tr>
               <th>サイズ</th>
               <td>F</td>
             </tr>
@@ -54,7 +50,7 @@
 
       
         <div class="section-item__lental-button">
-          <%= link_to "この服をかりる！"%>
+          <%= link_to "この服をかりる！",item_dealings_path(@item),method: :post %>
         </div>
 
 
@@ -64,4 +60,6 @@
 </div>
 
 
-<%= render "top/footer"%>
+
+
+<%= render "tops/footer"%>
