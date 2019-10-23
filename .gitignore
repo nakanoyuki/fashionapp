@@ -27,3 +27,4 @@
 /config/master.key
 app/assets/images/top/IMG_6376.jpg
 app/.DS_Store
+db/schema.rb
