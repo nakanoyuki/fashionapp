@@ -4,6 +4,8 @@
 .four-box {
     display: flex;
     padding-bottom: 30px;
+    max-width:1300px;
+    margin:0 auto;
   }
   
   .product-box {
@@ -17,6 +19,7 @@
   
   .product-box__img {
     width:200px;
+    max-height: 240px;
   }
   
   .product-box__bottom {

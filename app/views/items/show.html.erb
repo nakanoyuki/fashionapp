@@ -2,7 +2,7 @@
 
   <div class="section-item">
     <div class="section-item__image-frame">
-      <%= image_tag("#{asset_path "item/tops1"}",class:"section-item__image-item") %>
+      <%= image_tag(@item.image,class:"section-item__image-item") %>
     </div>
 
     <div class="section-item__content">
@@ -13,34 +13,35 @@
 
       <div class="section-item__content__price">
         <span class="section-item__value">定価</span>
-        <span class="section-item__value">￥8,500</span>
-        <span class="section-item__suffix">(税込¥9,350)</span>
+        <span class="section-item__value">
+          ¥<%=@item.price%>
+        </span>
       </div>
 
       <div class="section-item__content__information">
         <p class="section-item__content__information__text">
-        流れるように配置されたギャザーがアクセントになっているのでアクセサリーいらず！ １枚で着映えのするトップスです。シンプルなパンツとのコーデがオススメですが、スカートと合わせて、甘めな上品スタイルに仕上げても◎。
+            <%=@item.description%>
         </p>
 
         <table class="section-item__information-table">
           <tbody>
             <tr>
               <th>カラー</th>
-              <td>パープル</td> 
+              <td><%=@item.color%></td> 
             </tr>
             <tr>
               <th>素材</th>
-              <td>ポリエステル</td>
+              <td><%=@item.material%></td>
               
             </tr>
             <tr>
               <th>ブランド</th>
-              <td>YUKI. CLOSET</td>
+              <td><%=@item.brand%></td>
             </tr>
 
             <tr>
               <th>サイズ</th>
-              <td>F</td>
+              <td><%=@item.size%></td>
             </tr>
             
             </tbody>

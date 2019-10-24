@@ -1,7 +1,7 @@
 <% @items.each do |item| %>
   <a class="product-box" href="/items/<%= item.id %>">
     <div class="product-box__top">
-      <%= image_tag("#{asset_path "item/tops1"}",class:"product-box__img") %>
+      <%= image_tag(item.image,class:"product-box__img") %>
     </div>
 
     <div class="product-box__bottom">
@@ -16,4 +16,7 @@
       </div>
     </div>
   </a>
+ 
 <% end %>
+
+

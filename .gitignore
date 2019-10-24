@@ -28,3 +28,16 @@
 app/assets/images/top/IMG_6376.jpg
 app/.DS_Store
 db/schema.rb
+/public
+app/assets/images/item/tops2.jpg
+app/assets/images/item/tops3.jpg
+app/assets/images/item/tops4.jpg
+app/assets/images/tops1.jpg
+app/assets/images/tops2.jpg
+app/assets/images/tops3.jpg
+app/assets/images/tops5.jpg
+app/assets/images/tops4.jpg
+app/assets/images/tops6.jpg
+app/assets/images/tops7.jpg
+app/assets/images/tops8.jpg
+db/schema.rb
