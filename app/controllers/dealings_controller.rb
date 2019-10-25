@@ -8,8 +8,8 @@ class DealingsController < ApplicationController
 
   def destroy
     @item = Item.find(params[:id])
-    user_id===current_user.id
-    @item.destroy if @item.user_id == current_user.id
+    @dealings = @item.item_users.build(user_id: current_user.id)
+    @dealings.destroy if @dealings.user_id == current_user.id
   end
 
 end
