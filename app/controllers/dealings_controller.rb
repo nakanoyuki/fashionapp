@@ -6,5 +6,10 @@ class DealingsController < ApplicationController
     @dealings.save
   end
 
-  
+  def destroy
+    @item = Item.find(params[:id])
+    user_id===current_user.id
+    @item.destroy if @item.user_id == current_user.id
+  end
+
 end
