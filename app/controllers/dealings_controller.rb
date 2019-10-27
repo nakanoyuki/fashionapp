@@ -6,5 +6,9 @@ class DealingsController < ApplicationController
     @dealings.save
   end
 
-  
+  def show
+    
+  end
+
+
 end
