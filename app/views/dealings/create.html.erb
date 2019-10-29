@@ -61,8 +61,8 @@
 
 
 
-<%= link_to "マイページでかりてるBOXを見る", root_path%>
-<%= link_to "レンタルをとり消す", item_dealing_path(@item,current_user), method: :delete%>
+<%= link_to "マイページでかりてる服を見る",user_path(current_user) %>
+
 <%= link_to "トップページに戻る", root_path %>
 <%= render "tops/footer"%>
 
