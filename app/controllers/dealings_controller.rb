@@ -12,6 +12,7 @@ class DealingsController < ApplicationController
       redirect_to root_path
   end
 
+
   def destroy
     @item = Item.find(params[:item_id])
     @dealings = @item.item_users.build(user_id: current_user.id)
@@ -22,4 +23,8 @@ class DealingsController < ApplicationController
     @item = Item.find(params[:item_id])
   end
 
+
+  def show
+    
+  end
 end
