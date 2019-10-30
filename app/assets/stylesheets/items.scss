@@ -5,7 +5,7 @@
   display: flex;
 }
 
-.four-box {
+.box {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 30px;
@@ -17,9 +17,9 @@
     width: 200px;
     min-width: 200px;
     height: 330px;
-    margin: 10px;
+    margin-bottom: 50px;
     text-decoration: none;
-    margin: 0 auto;
+   
   }
   
   .product-box__img {
