@@ -24,6 +24,8 @@
 @import "sign_in";
 @import "dealings";
 
+@import "mypage";
+
 
 
 body {

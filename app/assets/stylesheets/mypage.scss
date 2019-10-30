@@ -1,0 +1,31 @@
+.mypage-user {
+  padding-top: 100px;
+  &__title{
+    font-size: 28px;
+    margin-left: 500px;
+
+  }
+
+  &__box {
+    display: flex;
+    margin-left: 500px;
+    margin-top: 40px;
+   
+    &__img {
+      width:200px;
+      max-height: 240px;
+    }
+
+    &__bottom {
+      background-color: #fff;
+      color: #000;
+
+        &__title {
+          font-size: 16px;
+          line-height: 25px;
+          padding: 90px;
+          font-size: 18px;
+        }
+    }
+  }
+}
