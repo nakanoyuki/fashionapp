@@ -1,5 +1,22 @@
-<p>あなたが借りている服</p>
 
+<%= render "tops/header"%>
 
+<div class="mypage-user">
+  <div class="mypage-user__title">あなたがかりている服</div>
 
+  <% @items.each do|item| %>
+
+  <div class="mypage-user__box">
+    <div class="mypage-user__box__img">
+    <%= image_tag(item.image,class:"mypage-user__box__img") %>
+    </div>
+
+    <div class="mypage-user__box__bottom">
+      <div class="mypage-user__box__bottom__title" title="<%= item.title %>">
+        <%= item.title %>
+      </div>
+    </div>  
+  </div>
+  <%end%>
+</div>
 <%= render "tops/footer"%>

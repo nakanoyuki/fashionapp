@@ -1,3 +1,68 @@
-<p>レンタルしました</p>
-  <%= @item.title %>
+
+
+<div class="rental">レンタルしました</div>
+
+<div class="rental-preview">
+  <div class="section-item">
+    <div class="section-item__image-frame">
+      <%= image_tag(@item.image,class:"section-item__image-item") %>
+    </div>
+
+    <div class="section-item__content">
+
+      <div class="section-item__content__title">
+        <span><%=@item.title%></span>
+      </div>
+
+      <div class="section-item__content__price">
+        <span class="section-item__value">定価</span>
+        <span class="section-item__value">
+          ¥<%=@item.price%>
+        </span>
+      </div>
+
+      <div class="section-item__content__information">
+        <p class="section-item__content__information__text">
+            <%=@item.description%>
+        </p>
+
+        <table class="section-item__information-table">
+          <tbody>
+            <tr>
+              <th>カラー</th>
+              <td><%=@item.color%></td> 
+            </tr>
+            <tr>
+              <th>素材</th>
+              <td><%=@item.material%></td>
+              
+            </tr>
+            <tr>
+              <th>ブランド</th>
+              <td><%=@item.brand%></td>
+            </tr>
+
+            <tr>
+              <th>サイズ</th>
+              <td><%=@item.size%></td>
+            </tr>
+            
+            </tbody>
+          </table>
+
+      <div class="section-item__lental">
+
+      
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+<%= link_to "マイページでかりてる服を見る",user_path(current_user) %>
+
+<%= link_to "トップページに戻る", root_path %>
+<%= render "tops/footer"%>
 
