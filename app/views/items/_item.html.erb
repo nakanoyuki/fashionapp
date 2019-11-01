@@ -1,20 +1,35 @@
 <% @items.each do |item| %>
-  <a class="product-box" href="/items/<%= item.id %>">
-    <div class="product-box__top">
-      <%= image_tag(item.image,class:"product-box__img") %>
-    </div>
-
+  <a href="/items/<%= item.id %>"> 
+    <div class="product-box">
+      <div class="product-box__top">
+        <%= image_tag(item.image,class:"product-box__img") %>
+      </div>
+  </a>
     <div class="product-box__bottom">
       <div class="product-box__bottom__title" title="<%= item.title %>">
         <%= item.title %>
       </div>
 
-      <div class="product-box__bottom__info">
-        <div class="product-box__bottom__info__like">
-          <i class="far fa-heart"></i>
+      <div class="product-box__bottom__like">
+        <div id="like-icon-item-<%= item.id.to_s %>", class="product-box__bottom__like">
+          <% if item.liked_by(current_user).present? %>
+           
+            <i class="fa fa-heart"></i>
+            <%= link_to "いいね！",item_like_path(item.id, item.liked_by(current_user)), method: :DELETE, remote: true, class: "product-box__bottom__like hide-text" %>
+            <%= item.likes.count %>
+     
+          <% else %>
+            <i class="far fa-heart"></i>
+            <%= link_to "いいね！",item_likes_path(item), method: :POST, remote: true, class: "product-box__bottom__like hide-text" %>
+            <%= item.likes.count %>
+          
+          <% end %>
+
         </div>
       </div>
     </div>
-  </a>
- 
+
+    
+  </div> 
 <% end %>
+

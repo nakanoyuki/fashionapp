@@ -1,0 +1,2 @@
+$('#like-icon-item-<%= @item.id.to_s %>').
+  html('<i class="far fa-heart"></i><%= link_to "いいね！", item_likes_path(@item), method: :POST, remote: true, class: "product-box__bottom__like hide-text" %><%= @item.likes.count %>');
