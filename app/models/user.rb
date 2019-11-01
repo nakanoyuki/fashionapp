@@ -6,4 +6,8 @@ class User < ApplicationRecord
   
   has_many :item_users
   has_many :items , through: :item_users
+
+  has_many :likes
 end
+
+
