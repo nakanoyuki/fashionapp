@@ -1,6 +1,7 @@
 .section-item {
   display: flex;
-  margin: 0 auto;    
+  margin: 0 auto;
+  padding-top: 100px;
 
   &__image-item {
     width: 400px;
@@ -9,10 +10,10 @@
 
   &__content {
     width: calc(100%-400px);
+    text-align: center;
     &__title {
       font-size: 16pt;
       font-weight: bold;
-      // text-align: left;
       margin: 4px 0 0;
     }
     &__price {
@@ -35,7 +36,7 @@
   margin:16px 0 0;
   border:1px solid #FAFAFA;
   color:#333;
-
+  margin: 0 auto;
   th {
     padding: 10px 10px;
     background-color:#FAFAFA;
