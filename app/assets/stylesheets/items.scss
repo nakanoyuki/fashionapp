@@ -38,7 +38,6 @@
       background: #f5f5f5;
       border-radius: 40px;
       cursor: pointer;
-      /* display: flex; */
       font-size: 16px;
     }
       &__title {
@@ -49,6 +48,7 @@
   
   .style-item{
     text-align: center;
+   
    &__title p{
     padding: 200px 0 30px 0;
     font-size: 30px;
