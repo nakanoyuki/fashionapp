@@ -33,8 +33,6 @@ ActiveRecord::Schema.define(version: 2019_10_30_102155) do
     t.integer "price"
     t.string "brand"
     t.string "size"
-    t.bigint "user_id"
-    t.index ["user_id"], name: "index_items_on_user_id"
   end
 
   create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -60,7 +58,6 @@ ActiveRecord::Schema.define(version: 2019_10_30_102155) do
 
   add_foreign_key "item_users", "items"
   add_foreign_key "item_users", "users"
-  add_foreign_key "items", "users"
   add_foreign_key "likes", "items"
   add_foreign_key "likes", "users"
 end
