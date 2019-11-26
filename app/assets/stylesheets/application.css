@@ -15,7 +15,7 @@
  */
  
 /* @import "reset"; */
-@import "./top";
+@import "top";
 @import "stepber";
 @import "header";
 @import "footer";
