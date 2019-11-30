@@ -11,6 +11,7 @@
         <%= link_to "ITEM",items_path,class: "header__left"%>
         </li>
 
+  <% if user_signed_in? %>
         
         <li>CODINATE</li>
         <li>
@@ -20,7 +21,7 @@
       </ul>
     </nav>
 
-  <% if user_signed_in? %>
+ 
     <nav class="header__right">
       <ul>
         <li>
